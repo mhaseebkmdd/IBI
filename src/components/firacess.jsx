@@ -109,7 +109,7 @@ const FirAcess = () => {
           <button
             type="button"
             onClick={handleNextPage} // Add the onClick handler here
-            className="bg-white text-black hover:bg-red-500 p-6 py-2 px-8 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+            className= "  bg-red-500 text-black hover:bg-red-500 p-6 py-2 px-8 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Next
           </button>

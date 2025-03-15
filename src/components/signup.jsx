@@ -85,7 +85,7 @@ const SignupForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-white text-black font-semibold rounded-md border-2 border-red-500 hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500"
+            className="w-full py-2 px-4 bg-white  font-semibold rounded-md border-2 border-red-500 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-500"
           >
             Add User
           </button>
