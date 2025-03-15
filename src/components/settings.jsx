@@ -1,4 +1,3 @@
-// Settings.jsx
 import React, { useState } from 'react';
 
 const Settings = () => {
@@ -16,7 +15,7 @@ const Settings = () => {
           <p className="text-lg">Notifications</p>
           <button
             onClick={handleToggleNotifications}
-            className="px-4 py-2 bg-blue-500 text-white rounded-md"
+            className="px-4 py-2 bg-red-500 text-white rounded-md"
           >
             {notifications ? 'Disable' : 'Enable'} Notifications
           </button>
