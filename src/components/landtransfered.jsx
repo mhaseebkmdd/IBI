@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom"; // Import useNavigate
+import { useNavigate , Link} from "react-router-dom"; // Import useNavigate
 
 const LandTransfered = () => {
   const [file, setFile] = useState(null);
@@ -24,7 +24,18 @@ const LandTransfered = () => {
     e.preventDefault();
     alert('Form submitted');
   };
+  
+  const navigate = useNavigate();  // Initialize the navigate function
+   // Function to navigate back
+   const goBack = () => {
+    navigate(-1); // Go back to the previous page
+  };
 
+  // Function to navigate forward to the next page
+  const goNext = () => {
+    navigate('/dashboard/fileleased');  // Replace '/next-page' with the actual path to the next page
+  };
+  
   return (
 <div> <div>
               <Link to="/dashboard/firacess">
@@ -151,7 +162,21 @@ const LandTransfered = () => {
         </div>
       </form>
     </div>
-    
+     {/* Buttons at the bottom */}
+     <div className="flex justify-between space-x-4 mb-4">
+        <button
+          onClick={goBack}  // Back button functionality
+          className="bg-red-500 hover:bg-red-500 text-black py-2 px-10 rounded-l"
+        >
+          Back
+        </button>
+        <button
+          onClick={goNext}  // Next button functionality
+          className="bg-red-500 hover:bg-red-500 text-black py-2 px-10 rounded-r"
+        >
+          Next
+        </button>
+      </div>
     </div>
 
   );
