@@ -1,9 +1,13 @@
 import React from "react";
+import ViewProDashboard from './viewprodashboard'
 
 const TransferedProperty = () =>{
 
     return(
-<h1>Hello From TransferedProperty </h1>
+<>
+<ViewProDashboard />
+
+</>
     );
 };
 
