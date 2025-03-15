@@ -156,7 +156,7 @@ const LandTransfered = () => {
 
         {/* Submit Button */}
         <div className="flex items-center space-x-4">
-          <button type="submit" className="p-2 bg-red-500 text-white rounded">
+          <button type="submit" className="p-2 bg-red-500  rounded">
             Submit
           </button>
         </div>
